@@ -31,7 +31,7 @@ public class ContactManager {
     }
 
     private String generateKey(Contact contact) {
-        return String.format("%s-%s", contact.getFirstName(), contact.getLastName());
+        return String.format("%s-%s-%s", contact.getFirstName(), contact.getLastName(), contact.getPhoneNumber());
     }
 }
 

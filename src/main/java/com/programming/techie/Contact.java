@@ -18,6 +18,9 @@ public class Contact {
     public String getLastName() {
         return lastName;
     }
+    public String getPhoneNumber() {
+        return phoneNumber;
+    }
 
     public void validateFirstName() {
         if (this.firstName.isBlank())
@@ -44,5 +47,7 @@ public class Contact {
             throw new RuntimeException("Phone Number Should Start with 0");
         }
     }
+
+
 }
 
